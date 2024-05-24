@@ -23,7 +23,7 @@
 }
 .content {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   color: #fff;
 }
@@ -44,11 +44,39 @@
   align-items: center;
   font-weight: 550;
   font-size: 15px;
-  margin-top:10%;
+  margin-top: 5%;
   cursor: pointer;
 }
 .content button img {
-  width:18px;
+  width: 18px;
   border-radius: 50%;
   margin-left: 10px;
+}
+.launch-time {
+  display: flex;
+  margin-top: 10px;
+}
+.launch-time div {
+  flex-basis: 100px;
+}
+.launch-time p {
+  font-size: 50px;
+}
+.rocket {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
 }
